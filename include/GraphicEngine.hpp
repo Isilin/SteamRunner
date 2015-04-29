@@ -4,6 +4,7 @@
 #include "SFML/Graphics.hpp"
 #include "Engine.hpp"
 #include "ProgressBar/ProgressBar.hpp"
+#include "TransitionScreen.hpp"
 
 class GraphicEngine : public Engine{
 public :
@@ -30,6 +31,7 @@ private :
     sf::Font _font ;
     int _frame ;
     ProgressBar _bar ;
+    TransitionScreen _transition ;
 } ;
 
 #endif // COREENGINE_HPP_INCLUDED

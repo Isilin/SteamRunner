@@ -1,9 +1,9 @@
 #include "GraphicEngine.hpp"
 #include <iostream>
-#include <SFML/OpenGL.hpp>
+#include "SFML/OpenGL.hpp"
 
 GraphicEngine::GraphicEngine() : Engine(), _window(nullptr), _clock(), _lastUpdate(sf::Time::Zero), _fps(),
-                                            _font(), _frame(0), _bar(){
+                                            _font(), _frame(0), _bar(), _transition(){
     try{
         _font.loadFromFile("data/fonts/calibri.ttf") ;
     } catch(const std::exception& e){
@@ -61,6 +61,8 @@ void GraphicEngine::ProcessWindowEvents(){
 
     if(_bar.Progression() < 100){
         _bar.SetProgression(_bar.Progression()+0.5f) ;
+    } else{
+        _transition.Refresh() ;
     }
     _bar.RefreshPoint() ;
 }
@@ -78,6 +80,7 @@ void GraphicEngine::Render(){
         /* ===== Draw on the window ===== */
         _window->draw(_fps) ;
         _window->draw(_bar) ;
+        _window->draw(_transition) ;
         /* ===== Display the window ===== */
         _window->display() ;
     }

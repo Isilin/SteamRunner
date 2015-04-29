@@ -8,7 +8,7 @@
 		<Build>
 			<Target title="Debug">
 				<Option output="dbg/SteamRunner" prefix_auto="1" extension_auto="1" />
-				<Option object_output="dbg/obj/" />
+				<Option object_output="dbg/obj" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -96,6 +96,7 @@
 		<Unit filename="include/EngineEventManager.hpp" />
 		<Unit filename="include/GraphicEngine.hpp" />
 		<Unit filename="include/Graphic/ProgressBar/ProgressBar.hpp" />
+		<Unit filename="include/Graphic/TransitionScreen.hpp" />
 		<Unit filename="include/TypeEngine.hpp" />
 		<Unit filename="src/Application.cpp" />
 		<Unit filename="src/CoreEngine.cpp" />
@@ -132,6 +133,7 @@
 		<Unit filename="src/EngineEventManager.cpp" />
 		<Unit filename="src/GraphicEngine.cpp" />
 		<Unit filename="src/Graphic/ProgressBar/ProgressBar.cpp" />
+		<Unit filename="src/Graphic/TransitionScreen.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<code_completion />

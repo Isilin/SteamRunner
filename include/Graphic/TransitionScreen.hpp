@@ -3,11 +3,12 @@
 
 #include "SFML/Graphics.hpp"
 
-class TransitionScreen{
+class TransitionScreen : public sf::Drawable{
 public :
     TransitionScreen() ;
     ~TransitionScreen() ;
 
+    bool Refresh() ;
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states = sf::RenderStates::Default) const ;
 protected :
 private :

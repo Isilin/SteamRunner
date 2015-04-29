@@ -59,7 +59,7 @@ void ProgressBar::RefreshPoint(){
 
 void ProgressBar::draw(sf::RenderTarget& target, sf::RenderStates states) const{
     target.draw(_percentage, states) ;
-    target.draw(_background) ;
-    target.draw(_bar) ;
-    target.draw(_point) ;
+    target.draw(_background, states) ;
+    target.draw(_bar, states) ;
+    target.draw(_point, states) ;
 }
