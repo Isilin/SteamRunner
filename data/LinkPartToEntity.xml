@@ -1,0 +1,6 @@
+<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
+<ListLinkPartToEntity>
+	<pattern>LinkPartToEntity(.#IdPart, .#IdEntity)</pattern>
+	
+	<LinkPartToEntity IdPart="0" IdEntity="0" />
+</ListLinkPartToEntity>

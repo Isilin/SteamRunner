@@ -1,0 +1,9 @@
+<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
+<ListBiome>
+	<pattern>Biome(.IdBiome, Label)</pattern>
+	
+	<Biome IdBiome="0" Label="Desert" />
+	<Biome IdBiome="1" Label="Jungle" />
+	<Biome IdBiome="2" Label="Mine" />
+	<Biome IdBiome="3" Label="Robot" />
+</ListBiome>

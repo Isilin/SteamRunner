@@ -1,0 +1,10 @@
+<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
+<ListTypePart>
+	<pattern>TypePart(.IdTypePart, Label)</pattern>
+	
+	<TypePart IdTypePart="0" Label="Head" />
+	<TypePart IdTypePart="1" Label="Chest" />
+	<TypePart IdTypePart="2" Label="LeftArm" />
+	<TypePart IdTypePart="3" Label="RightArm" />
+	<TypePart IdTypePart="4" Label="Legs" />
+</ListTypePart>
