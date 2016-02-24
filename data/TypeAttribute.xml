@@ -1,7 +1,0 @@
-<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
-<ListTypeAttribute>
-	<pattern>TypeAttribute(.IdTypeAttribute, Label)</pattern>
-	
-	<TypeAttribute IdTypeAttribute="0" Label="Life" />
-	<TypeAttribute IdTypeAttribute="1" Label="MaxLife" />
-</ListTypeAttribute>

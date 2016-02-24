@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Steam_Runner" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Steam_Runner" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-ansi" />
+					<Add option="-g" />
+					<Add option="-DSFML_DYNAMIC" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-system" />
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-audio" />
+					<Add library="lib\libmingw32.a" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Steam_Runner" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+		</Linker>
+		<Unit filename="src/CoreEngine.cpp" />
+		<Unit filename="src/CoreEngine.hpp" />
+		<Unit filename="src/Engine.cpp" />
+		<Unit filename="src/Engine.hpp" />
+		<Unit filename="src/EngineEvent.cpp" />
+		<Unit filename="src/EngineEvent.hpp" />
+		<Unit filename="src/Event.hpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Game.hpp" />
+		<Unit filename="src/Graphic.hpp" />
+		<Unit filename="src/GraphicEngine.cpp" />
+		<Unit filename="src/GraphicEngine.hpp" />
+		<Unit filename="src/SoundEngine.cpp" />
+		<Unit filename="src/SoundEngine.hpp" />
+		<Unit filename="src/core/Action.cpp" />
+		<Unit filename="src/core/Action.hpp" />
+		<Unit filename="src/core/Data.cpp" />
+		<Unit filename="src/core/Data.hpp" />
+		<Unit filename="src/core/Effect.cpp" />
+		<Unit filename="src/core/Effect.hpp" />
+		<Unit filename="src/core/Entity.cpp" />
+		<Unit filename="src/core/Entity.hpp" />
+		<Unit filename="src/core/Mob.cpp" />
+		<Unit filename="src/core/Mob.hpp" />
+		<Unit filename="src/core/Part.cpp" />
+		<Unit filename="src/core/Part.hpp" />
+		<Unit filename="src/core/PersistantUpgradeTree.cpp" />
+		<Unit filename="src/core/PersistantUpgradeTree.hpp" />
+		<Unit filename="src/core/Player.cpp" />
+		<Unit filename="src/core/Player.hpp" />
+		<Unit filename="src/core/Room.cpp" />
+		<Unit filename="src/core/Room.hpp" />
+		<Unit filename="src/core/Rush.cpp" />
+		<Unit filename="src/core/Rush.hpp" />
+		<Unit filename="src/graphic/Display.cpp" />
+		<Unit filename="src/graphic/Display.hpp" />
+		<Unit filename="src/graphic/DisplayBackground.cpp" />
+		<Unit filename="src/graphic/DisplayBackground.hpp" />
+		<Unit filename="src/graphic/DisplayEffect.cpp" />
+		<Unit filename="src/graphic/DisplayEffect.hpp" />
+		<Unit filename="src/graphic/DisplayMenu.cpp" />
+		<Unit filename="src/graphic/DisplayMenu.hpp" />
+		<Unit filename="src/graphic/DisplayParticle.cpp" />
+		<Unit filename="src/graphic/DisplayParticle.hpp" />
+		<Unit filename="src/graphic/DisplaySprite.cpp" />
+		<Unit filename="src/graphic/DisplaySprite.hpp" />
+		<Unit filename="src/graphic/DisplayText.cpp" />
+		<Unit filename="src/graphic/DisplayText.hpp" />
+		<Unit filename="src/graphic/EventHandler.cpp" />
+		<Unit filename="src/graphic/EventHandler.hpp" />
+		<Unit filename="src/graphic/EventHandlerCredits.cpp" />
+		<Unit filename="src/graphic/EventHandlerCredits.hpp" />
+		<Unit filename="src/graphic/EventHandlerGame.cpp" />
+		<Unit filename="src/graphic/EventHandlerGame.hpp" />
+		<Unit filename="src/graphic/EventHandlerHome.cpp" />
+		<Unit filename="src/graphic/EventHandlerHome.hpp" />
+		<Unit filename="src/graphic/EventHandlerPU.cpp" />
+		<Unit filename="src/graphic/EventHandlerPU.hpp" />
+		<Unit filename="src/graphic/EventHandlerPlayer.cpp" />
+		<Unit filename="src/graphic/EventHandlerPlayer.hpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

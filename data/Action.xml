@@ -1,6 +1,0 @@
-<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
-<ListAction>
-	<pattern>Action(.IdAction, Name, Cost, DistanceMin, DistanceMax, Direction, #IdPart)</pattern>
-	
-	<Action IdAction="0" Name="Attack" Cost="55" DistanceMin="2" DistanceMax="7" Direction="LEFT" IdPart="0" />
-</ListAction>

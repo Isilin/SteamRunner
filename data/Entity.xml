@@ -1,7 +1,0 @@
-<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
-<ListEntity>
-	<pattern>Entity(.IdEntity)</pattern>
-	
-	<Entity IdEntity="0" />
-	<Entity IdEntity="1" />
-</ListEntity>

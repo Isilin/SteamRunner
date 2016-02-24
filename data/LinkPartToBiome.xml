@@ -1,6 +1,0 @@
-<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
-<ListLinkPartToBiome>
-	<pattern>LinkPartToBiome(.#IdPart, .#IdBiome)</pattern>
-	
-	<LinkPartToBiome IdPart="0" IdBiome="0" />
-</ListLinkPartToBiome>

@@ -1,0 +1,11 @@
+#type=stockOre~#v0~
+#type=countCurrentUpgrade~#initialeValue0=26~#perLevel0=1~#level=3~#value0=28~#maxLevel=135~
+#type=maxDifficulty~#value0=0~#perLevel0=1~#initialeValue0=0~#maxLevel=10~#level=1~
+#type=maxPressure~#name=Volume de la chambre à pression~#description=Pression maximum [15 (+1/niveau, infinie)].~#initialeValue0=15~#value0=15~#perLevel0=1~#maxLevel=0~#cost=10~#costPerLevel=10~#level=1~
+#type=reroll~#name=Optimisation de la reconstruction~#description=Reroll disponible [1 (+1/niveau, infinie)].~#initialeValue0=1~#value0=1~#perLevel0=1~#maxLevel=0~#cost=200~#costPerLevel=-1~#level=1~
+#type=convertionRate~#name=Broyeur de minerai~#description=Taux de convertion minerai en vapeur [15 (+5/niveau, 10 maximum)].~#initialeValue0=15~#value0=15~#perLevel0=5~#maxLevel=10~#cost=200~#costPerLevel=0~#level=1~
+#type=endRate~name=Machandage~#description=Taux de convertion vestige en minerai [50 (+50/niveau, 5 maximum)].~#initialeValue0=50~#value0=50~#perLevel0=50~#maxLevel=5~#cost=100~#costPerLevel=100~#level=1~
+#type=initialPressure~#name=Système d'impulsion initiale~#description=Pression initiale lors d'un combat [6 (+1/niveau, 10 maximum)].~#initialeValue0=6~#value0=6~#perLevel0=1~#maxLevel=10~#cost=50~#costPerLevel=50~#level=1~
+#type=orePerEnemy~#name=Recycleur améliorié~#description=Minerai par ennemi [11-22 (+1-2/niveau, 10 maximum)].~#initialeValue0=11~#value0=11~#perLevel0=1~#initaleValue1=22~#value1=22~#perLevel1=2~#maxLevel=10~#cost=100~#costPerLevel=10~#level=1~
+#type=volumeMusic~#value=20~
+#type=volumeSound~#value=20~

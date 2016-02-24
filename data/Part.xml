@@ -1,6 +1,0 @@
-<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
-<ListPart>
-	<pattern>Part(.IdPart, Name, #IdTypePart)</pattern>
-	
-	<Part IdPart="0" Name="Tanker" IdTypePart="0" />
-</ListPart>

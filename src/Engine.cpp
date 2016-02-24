@@ -1,40 +1,27 @@
+/**
+ * @file     Engine.cpp
+ * @author   Damien Claras
+ * @author   Pierre Casati
+ * @version  v0.1dev
+ * @date     2014, may 15th
+ * @brief    Methods of class Engine.
+ */
+
 #include "Engine.hpp"
+#include "GraphicEngine.hpp"
+#include "CoreEngine.hpp"
+#include "EngineEvent.hpp"
+#include "SoundEngine.hpp"
+#include <iostream>
 
-Engine::Engine() : _eventQueue(), _running(false), _thread(&Engine::ExecuteThread, this){
+Engine::Engine(Game* parent) : _parent(parent)
+{
+
 }
 
-Engine::~Engine(){
-    while(!_eventQueue.empty()){
-        _eventQueue.pop() ;
-    }
-}
+Engine::~Engine()
+{
 
-void Engine::PushEvent(const EngineEvent& eventIn){
-    _eventQueue.push(eventIn) ;
-}
-
-bool Engine::IsRunning() const{
-    return _running ;
-}
-
-TypeEngine Engine::Id() const{
-    return NONE ;
-}
-
-void Engine::StartThread(){
-    _running = true ;
-    _thread.launch() ;
-}
-
-void Engine::ExecuteThread(){
-    while(IsRunning()){
-        ProcessQueue() ;
-        Frame() ;
-    }
-}
-
-void Engine::StopThread(){
-    _running = false ;
 }
 
 void Engine::ProcessQueue()
@@ -42,12 +29,23 @@ void Engine::ProcessQueue()
     while(!_eventQueue.empty())
     {
         ProcessEvent(_eventQueue.front()) ;
+        delete(_eventQueue.front()) ;
         _eventQueue.pop() ;
     }
 }
 
-void Engine::ProcessEvent(const EngineEvent&){
+void Engine::SendMessageToGraphic(EngineEvent* event) const
+{
+    _graphicEngine->PushEvent(event) ;
 }
 
-void Engine::Frame(){
+void Engine::SendMessageToCore(EngineEvent* event) const
+{
+    _coreEngine->PushEvent(event) ;
 }
+
+void Engine::SendMessageToSound(EngineEvent* event) const
+{
+    _soundEngine->PushEvent(event) ;
+}
+

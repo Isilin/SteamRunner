@@ -1,7 +1,0 @@
-<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
-<ListTypeEffect>
-	<pattern>TypeEffect(.IdTypeEffect, Label, #IdTypeAttribute)</pattern>
-	
-	<TypeEffect IdTypeEffect="0" Label="Heal" IdTypeAttribute="0" />
-	<TypeEffect IdTypeEffect="1" Label="Attack" IdTypeAttribute="0" />
-</ListTypeEffect>

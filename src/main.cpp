@@ -1,21 +1,34 @@
+/**
+ * @file     main.cpp
+ * @author   Damien Claras
+ * @author   Pierre Casati
+ * @version  v0.1dev
+ * @date     2014, may 15th
+ * @brief    The main function.
+ */
+
+#include <iostream>
+#include <ctime>
 #include <cstdlib>
-#include "Application.hpp"
-#include "TypeEngine.hpp"
+#include "./core/Data.hpp"
 #include <iostream>
 
-int main(){
-    Application* app = new Application() ;
+#include "Game.hpp"
 
-// Parcourir une enum :
-//
-//    TypeEngine i = TypeEngine::NONE ; i = TypeEngine(int(i)+1) ;
-//    while(i != TypeEngine::NONE_END){
-//        std::cout << int(i) << std::endl ;
-//        i = TypeEngine(int(i)+1) ;
-//    }
-//
-    app->Run() ;
-    delete(app) ;
+int main(int argc, char** argv)
+{
+    Data::InitData() ;
+    srand(time(NULL)) ;
+    Game* game ;
+    game = new Game ;
 
+    game->Run() ;
+
+    if(!game->IsRunning())
+    {
+        delete game ;
+    }
+
+    Data::CloseData() ;
     return EXIT_SUCCESS;
 }

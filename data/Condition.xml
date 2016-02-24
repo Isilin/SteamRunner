@@ -1,6 +1,0 @@
-<?xml version = "1.1" encoding="UTF-8" standalone="yes" ?>
-<ListCondition>
-	<pattern>Condition(.IdCondition, Temporary, RemainingTurns, NameEffect, ValueEffect, #IdTypeEffect, #IdAction)</pattern>
-	
-	<Condition IdCondition="0" Temporary="False" RemainingTurns="5" NameEffect="Heal" ValueEffect="20" IdTypeEffect="0" IdAction="0" />
-</ListCondition>

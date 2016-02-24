@@ -1,0 +1,29 @@
+@author {auteur} : auteurs
+@brief {brève description} ou @short {short description} : description courte
+@bug {bug description} : rapporte la présence d'un bug
+@class <name> [<header-file>] [<header-name>] : pour déclarer une classe
+@copyright {copyright dsecription} : si l'envie nous prend de mettre un copyright
+@date {date description]}
+@def <name> : déclaration d'un #define
+@details {detailed description} : description détaillée
+@else : pour déclarer un else
+@elseif (section-label) : déclarer un else if
+@endif : déclarer la fin d'un if
+@enum <name> : déclarer une énumération
+@file [<name>] : déclarer le nom d'un fichier
+@fn (function declaration) : déclarer une fonction
+@if (section-label) : déclarer le début d'un if
+@include <file-name> : pour déclarer un #include
+@namespace <name> : déclarer un namespace
+@note {text} : écrire une note
+@overload [(function declaration)] : déclarer une surcharge de fonction
+@param[(dir)] <parameter-name> {parameter description} : déclarer un paramètre de fonction
+@remark {remark text} ou @remarks {remark text} : écrire une remarque
+@return {description of return value} : pour décrire ce que retourne la fonction, procédure, ou méthode
+@struct <name> [<header-file>] [<header-name>] : déclarer une structure
+@throw <exception-object> { exception description } ou @throws <exception-object> { exception description } :
+				pour déclarer une exception
+@todo { paragraph describing what is to be done } : écrire les choses à faire
+@var (variable description) : pour déclarer une variable (ne concerne pas les attributs : utiliser brief pour les attributs)
+@version { version number } : déclarer la version
+@warning {warning message} : déclarer un warning
